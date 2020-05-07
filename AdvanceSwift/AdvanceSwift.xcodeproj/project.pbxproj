@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046B535224640883003125A3 /* BuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B535124640883003125A3 /* BuyDetailViewController.swift */; };
 		04887E5A2463F4FC0079C3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E592463F4FC0079C3DF /* AppDelegate.swift */; };
 		04887E5C2463F4FC0079C3DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E5B2463F4FC0079C3DF /* SceneDelegate.swift */; };
 		04887E5E2463F4FC0079C3DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E5D2463F4FC0079C3DF /* ViewController.swift */; };
@@ -15,6 +16,12 @@
 		04887E662463F4FE0079C3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04887E642463F4FE0079C3DF /* LaunchScreen.storyboard */; };
 		04887E712463F4FF0079C3DF /* AdvanceSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E702463F4FF0079C3DF /* AdvanceSwiftTests.swift */; };
 		04887E7C2463F4FF0079C3DF /* AdvanceSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E7B2463F4FF0079C3DF /* AdvanceSwiftUITests.swift */; };
+		04887E8A2463FC040079C3DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E892463FC040079C3DF /* Coordinator.swift */; };
+		04887E8C2463FD780079C3DF /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E8B2463FD780079C3DF /* Storyboarded.swift */; };
+		04887E8E2463FDD30079C3DF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E8D2463FDD30079C3DF /* MainCoordinator.swift */; };
+		04887E902463FE9B0079C3DF /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E8F2463FE9B0079C3DF /* BuyViewController.swift */; };
+		04887E922463FEF30079C3DF /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E912463FEF30079C3DF /* CreateViewController.swift */; };
+		04887E942464006D0079C3DF /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04887E932464006D0079C3DF /* BuyCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046B535124640883003125A3 /* BuyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDetailViewController.swift; sourceTree = "<group>"; };
 		04887E562463F4FC0079C3DF /* AdvanceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvanceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04887E592463F4FC0079C3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04887E5B2463F4FC0079C3DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		04887E772463F4FF0079C3DF /* AdvanceSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvanceSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04887E7B2463F4FF0079C3DF /* AdvanceSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceSwiftUITests.swift; sourceTree = "<group>"; };
 		04887E7D2463F4FF0079C3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04887E892463FC040079C3DF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		04887E8B2463FD780079C3DF /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		04887E8D2463FDD30079C3DF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		04887E8F2463FE9B0079C3DF /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		04887E912463FEF30079C3DF /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		04887E932464006D0079C3DF /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +113,20 @@
 		04887E582463F4FC0079C3DF /* AdvanceSwift */ = {
 			isa = PBXGroup;
 			children = (
+				04887E5F2463F4FC0079C3DF /* Main.storyboard */,
 				04887E592463F4FC0079C3DF /* AppDelegate.swift */,
 				04887E5B2463F4FC0079C3DF /* SceneDelegate.swift */,
 				04887E5D2463F4FC0079C3DF /* ViewController.swift */,
-				04887E5F2463F4FC0079C3DF /* Main.storyboard */,
 				04887E622463F4FE0079C3DF /* Assets.xcassets */,
 				04887E642463F4FE0079C3DF /* LaunchScreen.storyboard */,
 				04887E672463F4FE0079C3DF /* Info.plist */,
+				04887E892463FC040079C3DF /* Coordinator.swift */,
+				04887E8B2463FD780079C3DF /* Storyboarded.swift */,
+				04887E8D2463FDD30079C3DF /* MainCoordinator.swift */,
+				04887E8F2463FE9B0079C3DF /* BuyViewController.swift */,
+				04887E912463FEF30079C3DF /* CreateViewController.swift */,
+				04887E932464006D0079C3DF /* BuyCoordinator.swift */,
+				046B535124640883003125A3 /* BuyDetailViewController.swift */,
 			);
 			path = AdvanceSwift;
 			sourceTree = "<group>";
@@ -192,7 +213,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = vn.netstars;
+				ORGANIZATIONNAME = Miu;
 				TargetAttributes = {
 					04887E552463F4FC0079C3DF = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -259,8 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04887E942464006D0079C3DF /* BuyCoordinator.swift in Sources */,
+				04887E922463FEF30079C3DF /* CreateViewController.swift in Sources */,
+				046B535224640883003125A3 /* BuyDetailViewController.swift in Sources */,
+				04887E8A2463FC040079C3DF /* Coordinator.swift in Sources */,
+				04887E8E2463FDD30079C3DF /* MainCoordinator.swift in Sources */,
 				04887E5E2463F4FC0079C3DF /* ViewController.swift in Sources */,
+				04887E8C2463FD780079C3DF /* Storyboarded.swift in Sources */,
 				04887E5A2463F4FC0079C3DF /* AppDelegate.swift in Sources */,
+				04887E902463FE9B0079C3DF /* BuyViewController.swift in Sources */,
 				04887E5C2463F4FC0079C3DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
