@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, Storyboarded {
     
-    weak var coordinator: (BuyingProtocol & AccountProtocol)?
+    var buyingClosureAction: (() -> Void)?
+    var createAccountClosureAction: (() -> Void)?
+    
     @IBOutlet weak var segmentProduct: UISegmentedControl!
     
     override func viewDidLoad() {
@@ -18,11 +20,11 @@ class ViewController: UIViewController, Storyboarded {
     }
 
     @IBAction func buyTapped(_ sender: Any) {
-        coordinator?.buySubscription(to: segmentProduct.selectedSegmentIndex)
+        buyingClosureAction?()
     }
     
     @IBAction func createTapped(_ sender: Any) {
-        coordinator?.createAccount()
+        createAccountClosureAction?()
     }
     
 }

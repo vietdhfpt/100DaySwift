@@ -8,15 +8,7 @@
 
 import UIKit
 
-protocol BuyingProtocol: AnyObject {
-    func buySubscription(to productType: Int)
-}
-
-protocol AccountProtocol: AnyObject {
-    func createAccount()
-}
-
-class MainCoordinator: NSObject, Coordinator, BuyingProtocol, AccountProtocol {
+class MainCoordinator: NSObject, Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
@@ -31,8 +23,16 @@ class MainCoordinator: NSObject, Coordinator, BuyingProtocol, AccountProtocol {
     func start() {
         navigationController.delegate = self
         let vc = ViewController.instantiate()
+        
+        vc.buyingClosureAction = { [weak self] in
+            self?.buySubscription()
+        }
+        
+        vc.createAccountClosureAction = { [weak self] in
+            self?.createAccount()
+        }
+        
         vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-        vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
     
@@ -45,7 +45,7 @@ class MainCoordinator: NSObject, Coordinator, BuyingProtocol, AccountProtocol {
         }
     }
     
-    func buySubscription(to productType: Int) {
+    func buySubscription(to productType: Int = 0) {
         let buyCoordinator = BuyCoordinator(navigationController: navigationController)
         buyCoordinator.selectedProduct = productType
         buyCoordinator.parentCoordinator = self
@@ -73,6 +73,10 @@ extension MainCoordinator: UINavigationControllerDelegate {
 
         if let buyViewController = fromViewController as? BuyViewController {
             childDidFinish(buyViewController.coordinator)
+        }
+        
+        if let createViewController = fromViewController as? CreateViewController {
+            childDidFinish(createViewController.coordinator)
         }
     }
 }

@@ -14,11 +14,9 @@ class CreateViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-    @IBAction func detailTapped(_ sender: Any) {
-        
+    deinit {
+        print("Deinit CreateViewController")
     }
 }
