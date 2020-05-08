@@ -28,5 +28,4 @@ class BuyCoordinator: Coordinator {
         vc.selectedProduct = selectedProduct
         navigationController.pushViewController(vc, animated: true)
     }
- 
 }
