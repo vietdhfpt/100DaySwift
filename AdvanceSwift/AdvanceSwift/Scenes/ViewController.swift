@@ -11,14 +11,15 @@ import UIKit
 class ViewController: UIViewController, Storyboarded {
     
     weak var coordinator: MainCoordinator?
-
+    @IBOutlet weak var segmentProduct: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func buyTapped(_ sender: Any) {
-        coordinator?.buySubscription()
+        coordinator?.buySubscription(to: segmentProduct.selectedSegmentIndex)
     }
     
     @IBAction func createTapped(_ sender: Any) {

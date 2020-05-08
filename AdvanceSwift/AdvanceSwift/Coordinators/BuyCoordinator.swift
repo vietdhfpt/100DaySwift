@@ -12,6 +12,7 @@ class BuyCoordinator: Coordinator {
     weak var parentCoordinator: MainCoordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
+    var selectedProduct = 0
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -24,10 +25,8 @@ class BuyCoordinator: Coordinator {
     func start() {
         let vc = BuyViewController.instantiate()
         vc.coordinator = self
+        vc.selectedProduct = selectedProduct
         navigationController.pushViewController(vc, animated: true)
     }
-    
-//    func didFinishBuying() {
-//        parentCoordinator?.childDidFinish(self)
-//    }
+ 
 }

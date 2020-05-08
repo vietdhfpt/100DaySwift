@@ -11,9 +11,11 @@ import UIKit
 class BuyViewController: UIViewController, Storyboarded {
     
     weak var coordinator: BuyCoordinator?
+    var selectedProduct: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Selected product: ", selectedProduct)
     }
     
     deinit {
