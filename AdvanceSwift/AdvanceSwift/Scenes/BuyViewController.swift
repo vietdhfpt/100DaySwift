@@ -1,5 +1,5 @@
 //
-//  CreateViewController.swift
+//  BuyViewController.swift
 //  AdvanceSwift
 //
 //  Created by Gia Han on 5/7/20.
@@ -8,14 +8,15 @@
 
 import UIKit
 
-class CreateViewController: UIViewController, Storyboarded {
+class BuyViewController: UIViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: BuyCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    deinit {
+        print("Deinit BuyViewController")
+    }
 }

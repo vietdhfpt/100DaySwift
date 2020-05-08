@@ -1,5 +1,5 @@
 //
-//  BuyDetailViewController.swift
+//  CreateViewController.swift
 //  AdvanceSwift
 //
 //  Created by Gia Han on 5/7/20.
@@ -8,12 +8,17 @@
 
 import UIKit
 
-class BuyDetailViewController: UIViewController, Storyboarded {
+class CreateViewController: UIViewController, Storyboarded {
     
+    weak var coordinator: CreateCoordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func detailTapped(_ sender: Any) {
+        
+    }
 }
