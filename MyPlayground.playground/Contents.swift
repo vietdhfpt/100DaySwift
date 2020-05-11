@@ -95,3 +95,6 @@ extension Sequence where Element: Equatable {
 
 print(numbers.contains(5))
 print(strings.contains2("Grap"))
+
+
+print(String(format: "hex string: %@ %@", "123456", "Viet"))
